@@ -51,6 +51,9 @@ readonly build_1_4_options_common=(
     "-DOT_SERVICE=ON"
     "-DOT_DNSSD_SERVER=ON"
     "-DOT_SRP_CLIENT=ON"
+    "-DOT_DNS_CLIENT=ON"
+    "-DOT_TCP=ON"
+    "-DOT_DNS_CLIENT_OVER_TCP=ON"
 )
 
 readonly build_1_4_options_nrf=(
