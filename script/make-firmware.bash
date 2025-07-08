@@ -285,7 +285,7 @@ deploy_ncs()
         ccache dfu-util device-tree-compiler wget \
         python3-dev python3-pip python3-setuptools python3-tk python3-wheel xz-utils file \
         make gcc gcc-multilib g++-multilib libsdl2-dev
-    pip3 install --user west
+    pip3 install west
     mkdir -p "${script_dir}"/../ncs
     cd "${script_dir}"/../ncs
     unset ZEPHYR_BASE
@@ -309,9 +309,9 @@ deploy_ncs()
         cd ../../../
     fi
 
-    pip3 install --user -r zephyr/scripts/requirements.txt
-    pip3 install --user -r nrf/scripts/requirements.txt
-    pip3 install --user -r bootloader/mcuboot/scripts/requirements.txt
+    pip3 install -r zephyr/scripts/requirements.txt
+    pip3 install -r nrf/scripts/requirements.txt
+    pip3 install -r bootloader/mcuboot/scripts/requirements.txt
 
     # shellcheck disable=SC1091
     source zephyr/zephyr-env.sh
