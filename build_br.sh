@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script to activate the Python virtual env and build the OTBR.
-# Note: ./script/bootstrap.bash must be run before the first time build.
+# Note: ./bootstrap.sh must be run before the first time build.
 
 set -euox pipefail
 
